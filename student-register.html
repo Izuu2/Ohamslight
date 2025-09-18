@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register – OhamsLight-Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo"><i class="fas fa-lightbulb"></i> Ohams<span>Light</span>-Hub</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero auth-hero" style="height: 42vh;">
+    <div class="hero-content">
+      <h1>Create Your Student Account</h1>
+      <p>Join the Discipleship Hub and start learning.</p>
+    </div>
+  </section>
+
+  <!-- Register -->
+  <section class="section auth-section">
+    <div class="container">
+      <div class="auth-card">
+        <div class="auth-card__body">
+          <h2 class="auth-title">Register</h2>
+          <p class="auth-sub">It’s free and takes less than a minute.</p>
+
+          <form id="registerForm" action="#" method="post" novalidate>
+            <!-- Honeypot (spam protection) -->
+            <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp-field">
+
+            <div class="form-row-2">
+              <div class="input-group">
+                <label for="full_name">Full Name</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-user"></i>
+                  <input id="full_name" name="full_name" class="form-control" type="text" placeholder="e.g., John Doe" required autocomplete="name">
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="phone">Phone</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-phone"></i>
+                  <input id="phone" name="phone" class="form-control" type="tel" inputmode="tel" placeholder="+234 11234567" autocomplete="tel">
+                </div>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="email" name="email" class="form-control" type="email" placeholder="you@example.com" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-lock"></i>
+                  <input id="password" name="password" class="form-control" type="password"
+                         required minlength="8"
+                         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+                         placeholder="Min 8 chars, A-Z, a-z, 0-9"
+                         autocomplete="new-password">
+                  <button type="button" class="toggle-password" data-toggle="password"><i class=""></i></button>
+                </div>
+                <small class="help-text">At least 8 characters with upper, lower, and a number.</small>
+              </div>
+
+              <div class="input-group">
+                <label for="confirm_password">Confirm Password</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-shield"></i>
+                  <input id="confirm_password" name="confirm_password" class="form-control" type="password" required autocomplete="new-password" placeholder="Re-enter password">
+                  <button type="button" class="toggle-password" data-toggle="confirm_password"><i class=""></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="terms" required>
+              <label for="terms">I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</label>
+            </div>
+
+            <div class="form-alert" id="registerAlert" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-block">Create Account</button>
+
+            <p class="auth-switch">Already have an account? <a href="student-login.html">Log in</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>OhamsLight-Hub</h3>
+          <p>A Comprehension of today's Christian standard way of living in the digital world of God's Knowledge.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@OHAMSLIGHTHUB"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> 80 Charles Nwakaeze Avenue Off Cele 2, Gbetu, New Road, Awoyaya Lagos</a></li>
+            <li><a href="mailto:info@ohamslighthub.com"><i class="fas fa-envelope"></i> info@ohamslighthub.com</a></li>
+            <li><a href="tel:+2341234567890"><i class="fas fa-phone-alt"></i> +234 123 456 7890</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 OhamsLight-Hub. All Rights Reserved. Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
